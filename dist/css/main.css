@@ -121,4 +121,16 @@ h5 {
 
 small, .small-text {
   font-size: 0.75rem;
+}
+
+.container {
+  inline-size: 90%;
+  max-inline-size: 64em;
+  margin-inline: auto;
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
