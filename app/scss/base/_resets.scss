@@ -59,3 +59,16 @@ img {
   max-inline-size: 100%;
 }
 
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f9f9f9;
+}
