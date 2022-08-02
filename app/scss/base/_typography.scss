@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as var;
+@use  "../abstracts/mixin" as mix;
+p {
+  margin-block-end: var.$block-space;
+  max-inline-size: clamp(45ch, 50%, 75ch);
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  margin-block-end: var.$inline-space;
+  font-family: var.$font-sans;
+  font-weight: map-get(mix.$font-weights, bold);
+  line-height: 1.3;
+}
+
+h1 {
+  margin-block-start: 0;
+  font-size: clamp(1.5rem, 0.75rem + 1.5vw, 3.0625rem);
+}
+h2 {
+  font-size: clamp(1.25rem, 0.75rem + 1.5vw, 2.441rem);
+}
+h3 {
+  font-size: 1.951rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small, .small-text {
+font-size: 0.75rem;
+}
