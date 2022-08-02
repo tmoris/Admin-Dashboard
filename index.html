@@ -11,32 +11,31 @@
 <body>
 <div class="container">
   <header class="header">
-    <form action="#" method="get">
+    <form action="#" method="get" class="form">
       <div class="form-group">
         <label for="search" ><i class="fa-solid fa-magnifying-glass"></i></label>
         <input type="search" name="search" id="search" placeholder="search....." class="form-control">
       </div>
     </form>
-    <div class="profile-notification">
+    <div class="user-profile user-profile__primary">
       <i class="fa-solid fa-bell"></i>
-    <section user-profile>
-      <i class="fa-duotone fa-square-user"></i>
+    <section class="user-profile">
       <h2>morgan oakley</h2>
       <img src="#" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
     </section>
     </div>
-    <div class="profile-nav">
-      <section user-profile>
-       <div>
+    <div class="user">
+      <div class="user-profile">
+       <section class="user-profile__text">
         <p>hi there,</p>
         <h2>morgan oakley(@morgan)</h2>
-       </div>
-        <img src="#" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
-      </section>
-      <div class="links">
-        <a href="#">new</a>
-        <a href="#">upload</a>
-        <a href="#">share</a>
+       </section>
+        <img src="#" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="" class="user-profile__img">
+      </div>
+      <div class="header-nav">
+        <a href="#" class="header-nav__links">new</a>
+        <a href="#"class="header-nav__links">upload</a>
+        <a href="#" class="header-nav__links">share</a>
       </div>
     </div>
   </header>
