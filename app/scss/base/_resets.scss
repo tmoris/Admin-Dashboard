@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as var;
+@use "../abstracts/mixin" as mix;
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -70,5 +71,9 @@ html {
 }
 
 body {
-  background-color: #f9f9f9;
+  background-color: var.$white;
+  color: var.$dark-red;
+  font-family: var.$font-roboto;
+  font-weight: map-get(mix.$font-weights , reg);
+  line-height: 0.6;
 }
