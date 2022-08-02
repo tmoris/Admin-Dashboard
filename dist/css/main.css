@@ -133,4 +133,9 @@ small, .small-text {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }/*# sourceMappingURL=main.css.map */
