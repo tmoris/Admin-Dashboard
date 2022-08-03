@@ -1,6 +1,7 @@
 @use  "../abstracts/variables" as var;
 @use  "../abstracts/mixin" as mix;
 .nav {
+  inline-size: 15%;
 background-color: var.$slateblue;
 position: absolute;
 top:0;
