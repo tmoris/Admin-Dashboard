@@ -1,4 +1,81 @@
+@use "../abstracts/variables" as var;
 .header {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  background-color: #fff;
+  padding-block: var.$block-space;
+
+  &-content {
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+  
+}
+.form {
+ inline-size: 100%;
+padding: var.$block-space;
+
+ &-group {
+  align-items: center;
+  gap: 0.5em;
+
+  &:last-child {
+    inline-size: 100%;
+    margin-inline-start: 1em;
+  }
+  & button {
+    background: transparent;
+    border: 0;
+    padding: 0.25em 0.75em;
+    cursor: pointer;
+
+  }
+ }
+ &-label {
+  display: none;
+ }
+ &-control {
+  inline-size: 90%;
+  block-size: auto;
+  border-radius: 100vw;
+  padding: 0.25em 0.75em;
+  border: 0;
+ }
+}
+.user-profile {
+align-items: center;
+gap: 1em;
+padding: 0 var.$block-space;
+
+&__img {
+  border-radius:100vw ;
+  width: 3em;
+  height: 3em;
+  border: 2px solid var.$golden-yellow;
+
+  &--primary {
+    @extend .user-profile__img;
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
+}
+
+h2,p {
+  font-size: 1rem;
+  margin-block-end: 0;
+  text-transform: capitalize;
+}
+
+.header-nav {
+padding: 0.5em;
+
+&__links {
+  background-color: var.$slateblue;
+  color: var.$white;
+  text-transform: capitalize;
+  padding: 0.5em 1em;
+  border-radius: 100vw;
+}
+&__links + &__links {
+  margin-inline-start: 1em;
+}
 }

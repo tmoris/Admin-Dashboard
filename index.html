@@ -9,34 +9,38 @@
   <script src="https://kit.fontawesome.com/80210fbce6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container">
+<div class="grid-container">
   <header class="header">
-    <form action="#" method="get" class="form">
-      <div class="form-group">
-        <label for="search" ><i class="fa-solid fa-magnifying-glass"></i></label>
+  <div class="container grid-container header-content">
+    <form action="#" method="get" class="form flex">
+      <div class="form-group flex">
+        <button type="submit" name="search-button" id="search-button" aria-label="search-button" value="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="form-group flex">
+        <label for="search" class="form-label">search</label>
         <input type="search" name="search" id="search" placeholder="search....." class="form-control">
       </div>
     </form>
-    <div class="user-profile user-profile__primary">
+    <div class="user-profile user-profile__primary flex">
       <i class="fa-solid fa-bell"></i>
-    <section class="user-profile">
-      <h2>morgan oakley</h2>
-      <img src="./app/imgs/profile.jpg" class="img-fluid user-profile__img" width="40em" height="40em" alt="">
+    <section class="user-profile flex">
+      <img src="./app/imgs/profile.jpg" class="img-fluid user-profile__img--primary" width="40em" height="40em" alt="" loading="lazy">
+      <h2 class="user-profile__text--name">morgan oakley</h2>
     </section>
     </div>
-      <div class="user-profile">
+      <div class="user-profile flex">
+        <img src="./app/imgs/profile.jpg" class="img-fluid user-profile__img" alt=""  width="40em" height="40em" loading="lazy">
        <section class="user-profile__text">
-        <p>hi there,</p>
-        <h2>morgan oakley(@morgan)</h2>
+        <p class="user-profile__text--hi">hi there,</p>
+        <h2 class="user-profile__text--name">morgan oakley(@morgan)</h2>
        </section>
-        <img src="./app/imgs/profile.jpg" class="img-fluid user-profile__img" alt=""  width="40em" height="40em">
       </div>
-     
-    <div class="header-nav">
+    <div class="header-nav flex">
       <a href="#" class="header-nav__links">new</a>
       <a href="#"class="header-nav__links">upload</a>
       <a href="#" class="header-nav__links">share</a>
     </div>
+  </div>
   </header>
 </div>
 </body>
