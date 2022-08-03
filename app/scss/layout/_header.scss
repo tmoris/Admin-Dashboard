@@ -2,9 +2,9 @@
 .header {
   background-color: #fff;
   padding-block: var.$block-space;
-
+position: relative;
   &-content {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns:  2fr 1fr;
     align-items: center;
   }
   
@@ -12,6 +12,7 @@
 .form {
  inline-size: 100%;
 padding: var.$block-space;
+margin-inline-start: 5em;
 
  &-group {
   align-items: center;
@@ -33,7 +34,7 @@ padding: var.$block-space;
   display: none;
  }
  &-control {
-  inline-size: 90%;
+  inline-size: 80%;
   block-size: auto;
   border-radius: 100vw;
   padding: 0.25em 0.75em;
@@ -44,6 +45,7 @@ padding: var.$block-space;
 align-items: center;
 gap: 1em;
 padding: 0 var.$block-space;
+
 
 &__img {
   border-radius:100vw ;
@@ -56,6 +58,10 @@ padding: 0 var.$block-space;
     width: 1.5em;
     height: 1.5em;
   }
+ 
+}
+&__secondary {
+  margin-inline-start: 5em;
 }
 }
 

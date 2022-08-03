@@ -1,0 +1,10 @@
+@use  "../abstracts/variables" as var;
+@use  "../abstracts/mixin" as mix;
+.nav {
+background-color: var.$slateblue;
+position: absolute;
+top:0;
+bottom: 0;
+height: 100vh;
+// transform: translateX(-100%);
+}

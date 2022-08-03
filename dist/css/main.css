@@ -146,6 +146,7 @@ small, .small-text {
 .header {
   background-color: #fff;
   padding-block: 1rem;
+  position: relative;
 }
 .header-content {
   grid-template-columns: 2fr 1fr;
@@ -155,6 +156,8 @@ small, .small-text {
 .form {
   inline-size: 100%;
   padding: 1rem;
+  -webkit-margin-start: 5em;
+          margin-inline-start: 5em;
 }
 .form-group {
   align-items: center;
@@ -175,7 +178,7 @@ small, .small-text {
   display: none;
 }
 .form-control {
-  inline-size: 90%;
+  inline-size: 80%;
   block-size: auto;
   border-radius: 100vw;
   padding: 0.25em 0.75em;
@@ -196,6 +199,10 @@ small, .small-text {
 .user-profile__img--primary {
   width: 1.5em;
   height: 1.5em;
+}
+.user-profile__secondary {
+  -webkit-margin-start: 5em;
+          margin-inline-start: 5em;
 }
 
 h2, p {
@@ -218,4 +225,12 @@ h2, p {
 .header-nav__links + .header-nav__links {
   -webkit-margin-start: 1em;
           margin-inline-start: 1em;
+}
+
+.nav {
+  background-color: #1C93D3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
 }/*# sourceMappingURL=main.css.map */
