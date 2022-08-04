@@ -1,3 +1,32 @@
+@use "../abstracts/variables" as var;
+
 .main {
-  margin-inline-start: 15%;
+  grid-area: main-content;
+  background-color: var.$light-blue;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "main-content sidebar";
+  grid-auto-rows: 1fr;
+  gap: var.$inline-space;
+  padding: var.$block-space;
+
+  &-projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: var.$inline-space;
+  }
+}
+.project {
+background-color: var.$white;
+padding: var.$block-space;
+border-radius: 0.5em;
+border-inline-start: 0.5em solid var.$golden-yellow;
+
+  &-icon {
+    display: flex;
+    gap: var.$block-space;
+    justify-content: flex-end;
+    width: 100%;
+    padding-block-end: var.$block-space;
+  }
 }

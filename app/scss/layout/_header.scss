@@ -2,16 +2,17 @@
 .header {
   background-color: var.$white;
   padding-block: var.$block-space;
-position: relative;
+  grid-area: site-header;
+
   &-content {
+    display: grid;
     grid-template-columns:  2fr 1fr;
     align-items: center;
-    margin-inline-start: 15%;
   }
 }
 .form {
  inline-size: 100%;
-padding: var.$block-space;
+padding-block: var.$block-space;
  &-group {
   align-items: center;
   gap: 0.5em;
@@ -42,8 +43,6 @@ padding: var.$block-space;
 .user-profile {
 align-items: center;
 gap: 1em;
-padding: 0 var.$block-space;
-
 
 &__img {
   border-radius:100vw ;

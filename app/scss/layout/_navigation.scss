@@ -1,11 +1,7 @@
 @use  "../abstracts/variables" as var;
 @use  "../abstracts/mixin" as mix;
 .nav {
-  inline-size: 15%;
+  grid-area: navigationbar;
 background-color: var.$slateblue;
-position: absolute;
-top:0;
-bottom: 0;
-height: 100vh;
-// transform: translateX(-100%);
+
 }

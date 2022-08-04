@@ -16,8 +16,8 @@
 
 <body>
   <div class="grid-container">
-    <header class="header">
-      <div class="container grid-container header-content">
+    <div class="header" aria-label="header">
+      <div class="container header-content">
         <form action="#" method="get" class="form flex">
           <div class="form-group flex">
             <button type="submit" name="search-button" id="search-button" aria-label="search-button" value="submit"><i
@@ -49,70 +49,63 @@
           <a href="#" class="header-nav__links">share</a>
         </div>
       </div>
-
-      <nav class="nav grid-container">
-        <div class="brand-nav">
-          <div class="brand-logo">
-            <h1>Dashboard</h1>
-          </div>
+    </div>
+    <nav class="nav nav-container">
+      <div class="brand-nav">
+        <div class="brand-logo">
+          <img src="./app/imgs/view-dashboard.svg" alt="">
+          <h1>Dashboard</h1>
         </div>
+      </div>
 
-        <ul class="nav-list">
-          <li class="nav-list__item"><a href="#" class="nav-list__item--link">home</a></li>
-          <li class="nav-list__item"><a href="#" class="nav-list__item--link">profile</a></li>
-          <li class="nav-list__item"><a href="#" class="nav-list__item--link">messages</a></li>
-          <li class="nav-list__item"><a href="#" class="nav-list__item--link">history</a></li>
-          <li class="nav-list__item"><a href="#" class="nav-list__item--link">task</a></li>
-          <li class="nav-list__item"><a href="#" class="nav-list__item--link">community</a></li>
-        </ul>
+      <ul class="nav-list">
+        <li class="nav-list__item"><a href="#" class="nav-list__item--link">home</a></li>
+        <li class="nav-list__item"><a href="#" class="nav-list__item--link">profile</a></li>
+        <li class="nav-list__item"><a href="#" class="nav-list__item--link">messages</a></li>
+        <li class="nav-list__item"><a href="#" class="nav-list__item--link">history</a></li>
+        <li class="nav-list__item"><a href="#" class="nav-list__item--link">task</a></li>
+        <li class="nav-list__item"><a href="#" class="nav-list__item--link">community</a></li>
+      </ul>
 
-        <ul class="nav-list">
-          <li class="nav-list__item"><a href="#" class="nav-list__item--link">setting</a></li>
-          <li class="nav-list__item"><a href="#" class="nav-list__item--link">support</a></li>
-          <li class="nav-list__item"><a href="#" class="nav-list__item--link">support</a></li>
-        </ul>
-      </nav>
-    </header>
-
+      <ul class="nav-list">
+        <li class="nav-list__item"><a href="#" class="nav-list__item--link">setting</a></li>
+        <li class="nav-list__item"><a href="#" class="nav-list__item--link">support</a></li>
+        <li class="nav-list__item"><a href="#" class="nav-list__item--link">support</a></li>
+      </ul>
+    </nav>
     <main class="main">
       <article class=" main-content">
         <h2>your projects</h2>
-        <div class="projects-container">
+        <div class="main-projects-container">
           <div class="project">
             <section class="project-text">
               <h3>super cool project</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur aliquid quis, maxime numquam
-                laudantium sapiente eum ipsum nihil obcaecati doloribus amet nemo quaerat cupiditate ratione sunt eaque
-                tenetur in dolorem.</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur aliquid quis, maxime numquam.</p>
             </section>
-            <div class="projects-icon">
+            <div class="project-icon">
               <img src="./app/imgs/star-plus-outline.svg" alt="">
               <img src="./app/imgs/eye-plus.svg" alt="">
               <img src="./app/imgs/source-fork.svg" alt="">
             </div>
           </div>
           <div class="project">
-            <section class="project-icon">
+            <section class="project-text">
               <h3>less cool project</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quia, eum explicabo quam cumque nisi
-                voluptatum. Accusantium consequuntur provident officiis perferendis sunt ipsam, quia placeat quo
-                voluptatem voluptatum alias assumenda.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quia, eum explicabo quam cumque nisi.</p>
             </section>
-            <div class="projects-icon">
+            <div class="project-icon">
               <img src="./app/imgs/star-plus-outline.svg" alt="">
               <img src="./app/imgs/eye-plus.svg" alt="">
               <img src="./app/imgs/source-fork.svg" alt="">
             </div>
           </div>
           <div class="project">
-            <section class="project-icon">
+            <section class="project-text">
               <h3>impossible app</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut sequi deserunt quam. Impedit repellat
-                eius vero sint incidunt quaerat perspiciatis beatae, dicta excepturi, autem perferendis. Eum voluptates
-                iusto maiores magnam.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut sequi deserunt quam. Impedit repellat.</p>
             </section>
 
-            <div class="projects-icon">
+            <div class="project-icon">
               <img src="./app/imgs/star-plus-outline.svg" alt="">
               <img src="./app/imgs/eye-plus.svg" alt="" class="eye-icon">
               <img src="./app/imgs/source-fork.svg" alt="">
@@ -120,10 +113,9 @@
           </div>
           <div class="project">
             <h3>easy peasy app</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio autem cum nostrum sed dolores deserunt
-              facilis mollitia, sit rem labore eum magni veritatis asperiores ipsa unde, minima est obcaecati facere?
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio autem cum nostrum sed dolores deserunt?
             </p>
-            <div class="projects-icon">
+            <div class="project-icon">
               <img src="./app/imgs/star-plus-outline.svg" alt="">
               <img src="./app/imgs/eye-plus.svg" alt="">
               <img src="./app/imgs/source-fork.svg" alt="">
@@ -131,10 +123,8 @@
           </div>
           <div class="project">
             <h3>ad blocker</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nesciunt ullam ipsam porro, omnis fugiat,
-              possimus sequi modi officia ratione nobis dignissimos reiciendis cupiditate iusto id! Distinctio, nemo
-              corrupti. Veritatis.</p>
-            <div class="projects-icon">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nesciunt ullam ipsam porro, omnis fugiat.</p>
+            <div class="project-icon">
               <img src="./app/imgs/star-plus-outline.svg" alt="">
               <img src="./app/imgs/eye-plus.svg" alt="">
               <img src="./app/imgs/source-fork.svg" alt="">
@@ -142,10 +132,8 @@
           </div>
           <div class="project">
             <h3>money maker</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt autem asperiores accusamus perferendis
-              dolorum harum tempore corrupti. Quam, quidem exercitationem iste nam est minus dolor facilis consequatur
-              vel, ipsum quas.</p>
-            <div class="projects-icon">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt autem asperiores accusamus perferendis.</p>
+            <div class="project-icon">
               <img src="./app/imgs/star-plus-outline.svg" alt="">
               <img src="./app/imgs/eye-plus.svg" alt="">
               <img src="./app/imgs/source-fork.svg" alt="">
@@ -158,56 +146,53 @@
         <div class="announcements-container">
           <section class="announcement">
             <h3>site maintainance</h3>
-            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum adipisci architecto repellat explicabo
-              sequi sit quasi laudantium distinctio, enim provident inventore tempore odio eius eveniet numquam optio
-              laboriosam? Ullam, vel?</P>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum adipisci architecto repellat explicabo?</P>
           </section>
 
           <section class="announcement">
             <h3>community share day</h3>
             <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident culpa consectetur non quidem ad
-              accusamus magnam quos, a sunt architecto? Tenetur aperiam quos vitae, tempora error magni temporibus
-              molestiae vel.</P>
+            .</P>
           </section>
           <section class="announcement">
             <h3>updated privacy prolicy</h3>
-            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus animi repudiandae minima
-              necessitatibus nisi ratione, ipsa cumque ad eveniet repellendus debitis quo deserunt reprehenderit,
-              eligendi aut sed magni ipsam odit?</P>
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus animi repudiandae minima?</P>
           </section>
         </div>
 
         <article class="trend">
           <h2>trending</h2>
-          <div class="user-profile user-profile__secondary flex">
-            <img src="./app/imgs/dog-side.svg" class="img-fluid user-profile__img" alt="">
-            <section class="user-profile__text">
-              <h3 class="user-profile__text--name">@tegan</h3>
-              <p class="user-profile__text--hi">world peace builder</p>
-            </section>
-          </div>
-          <div class="user-profile user-profile__secondary flex">
-            <img src="./app/imgs/profile.jpg" class="img-fluid user-profile__img" alt="">
-            <section class="user-profile__text">
-              <h3 class="user-profile__text--name">@morgan</h3>
-              <p class="user-profile__text--hi">super cool project</p>
-            </section>
-          </div>
-
-          <div class="user-profile user-profile__secondary flex">
-            <img src="./app/imgs/robot-happy-outline.svg" class="img-fluid user-profile__img" alt="">
-            <section class="user-profile__text">
-              <h3 class="user-profile__text--name">@kendall</h3>
-              <p class="user-profile__text--hi">life changing app</p>
-            </section>
-          </div>
-          
-          <div class="user-profile user-profile__secondary flex">
-            <img src="./app/imgs/gamepad-square-outline.svg" class="img-fluid user-profile__img" alt="">
-            <section class="user-profile__text">
-              <h3 class="user-profile__text--name">@alex</h3>
-              <p class="user-profile__text--hi">no traffic marker</p>
-            </section>
+          <div class="trends">
+            <div class="user-profile user-profile__secondary flex">
+              <img src="./app/imgs/dog-side.svg" class="img-fluid user-profile__img" alt="">
+              <section class="user-profile__text">
+                <h3 class="user-profile__text--name">@tegan</h3>
+                <p class="user-profile__text--hi">world peace builder</p>
+              </section>
+            </div>
+            <div class="user-profile user-profile__secondary flex">
+              <img src="./app/imgs/profile.jpg" class="img-fluid user-profile__img" alt="">
+              <section class="user-profile__text">
+                <h3 class="user-profile__text--name">@morgan</h3>
+                <p class="user-profile__text--hi">super cool project</p>
+              </section>
+            </div>
+  
+            <div class="user-profile user-profile__secondary flex">
+              <img src="./app/imgs/robot-happy-outline.svg" class="img-fluid user-profile__img" alt="">
+              <section class="user-profile__text">
+                <h3 class="user-profile__text--name">@kendall</h3>
+                <p class="user-profile__text--hi">life changing app</p>
+              </section>
+            </div>
+            
+            <div class="user-profile user-profile__secondary flex">
+              <img src="./app/imgs/gamepad-square-outline.svg" class="img-fluid user-profile__img" alt="">
+              <section class="user-profile__text">
+                <h3 class="user-profile__text--name">@alex</h3>
+                <p class="user-profile__text--hi">no traffic marker</p>
+              </section>
+            </div>
           </div>
         </article>
       </aside>   
