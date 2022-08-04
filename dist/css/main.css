@@ -234,8 +234,8 @@ small, .small-text {
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "main-content sidebar";
   grid-auto-rows: 1fr;
-  gap: 1.25rem;
-  padding: 1rem;
+  gap: 1rem;
+  padding: 1.25rem;
 }
 .main-projects-container {
   display: grid;
@@ -293,4 +293,12 @@ small, .small-text {
           border-block-start: 0.125em solid #E2E9EF;
   -webkit-padding-before: 0.5rem;
           padding-block-start: 0.5rem;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #1F1F1F;
+  color: #E1AF31;
+  text-align: center;
+  padding: 1.25rem;
 }/*# sourceMappingURL=main.css.map */

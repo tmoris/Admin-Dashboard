@@ -7,8 +7,8 @@
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "main-content sidebar";
   grid-auto-rows: 1fr;
-  gap: var.$inline-space;
-  padding: var.$block-space;
+  gap: var.$block-space;
+  padding: var.$inline-space;
 
   &-projects-container {
     display: grid;

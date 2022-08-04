@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as var;
+.footer {
+  grid-area: footer;
+  background-color: var.$dark-red;
+  color: var.$golden-yellow;
+  text-align: center;
+  padding: var.$inline-space;
+}
