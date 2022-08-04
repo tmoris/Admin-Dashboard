@@ -67,7 +67,7 @@ img {
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-size: 100%;
+  font-size: clamp(75%, 0.075rem + 1.5vw, 100%);
 }
 
 *, *::before, *::after {
@@ -214,7 +214,7 @@ small, .small-text {
   background-color: #1C93D3;
   color: #fff;
   text-transform: capitalize;
-  padding: 0.5em 1em;
+  padding: 0.125em 1em;
   border-radius: 100vw;
 }
 .header-nav__links + .header-nav__links {
@@ -234,4 +234,9 @@ small, .small-text {
 .main {
   -webkit-margin-start: 15%;
           margin-inline-start: 15%;
+}
+
+.eye-icon {
+  max-width: 1em;
+  max-height: 1em;
 }/*# sourceMappingURL=main.css.map */

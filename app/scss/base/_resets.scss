@@ -63,7 +63,7 @@ img {
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-size: 100%;
+  font-size: clamp(75%, calc(0.075rem + 1.5vw), 100%);
 }
 
 *, *::before, *::after {
