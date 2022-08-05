@@ -148,7 +148,9 @@ img {
   object-fit: cover;
   max-inline-size: 100%;
 }
-
+::placeholder {
+  font-family: inherit;
+}
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;

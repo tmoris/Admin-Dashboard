@@ -42,9 +42,15 @@
     inline-size: 80%;
     block-size: auto;
     border-radius: 100vw;
-    padding: 0.25em 0.75em;
+    padding: 0.5em;
     border: 0;
+    background-color: var.$light-blue;
+
+    &:focus {
+      outline: 0.0635rem solid var.$golden-yellow;
+    }
   }
+
 }
 
 .user-profile {

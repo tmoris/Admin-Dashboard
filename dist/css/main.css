@@ -147,6 +147,18 @@ img {
   max-inline-size: 100%;
 }
 
+::-moz-placeholder {
+  font-family: inherit;
+}
+
+:-ms-input-placeholder {
+  font-family: inherit;
+}
+
+::placeholder {
+  font-family: inherit;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -272,8 +284,12 @@ small,
   inline-size: 80%;
   block-size: auto;
   border-radius: 100vw;
-  padding: 0.25em 0.75em;
+  padding: 0.5em;
   border: 0;
+  background-color: #E2E9EF;
+}
+.form-control:focus {
+  outline: 0.0635rem solid #E1AF31;
 }
 
 .user-profile {
