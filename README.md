@@ -27,9 +27,9 @@ Users should be able to:
 
 ### Screenshot
 
-![![i![Screenshot 2022-08-05 at 09-51-19 Admin Dashboard](https://user-images.githubusercontent.com/57036823/183011606-ce70deaf-a9cb-4793-8f0a-e52fde9d7b3d.png)
-mage]
-]
+![Screenshot 2022-08-05 at 10-41-22 Admin Dashboard](https://user-images.githubusercontent.com/57036823/183017454-dd4b04a6-a668-4f37-b04b-9bdd95fe6e2a.png)
+
+
 
 ### Links
 
