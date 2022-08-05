@@ -222,9 +222,76 @@ small, .small-text {
           margin-inline-start: 1em;
 }
 
-.nav {
+.nav-container {
   grid-area: navigationbar;
   background-color: #1C93D3;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  padding-block: 2em;
+  padding-inline: 1.25rem;
+  color: #fff;
+}
+
+.brand-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.brand-nav h1 {
+  font-size: 1.5rem;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.brand-logo {
+  inline-size: 1.5rem;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  list-style-position: inside;
+}
+.nav-list__item {
+  display: list-item;
+}
+.nav-list__item + .nav-list__item {
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+}
+.nav-primary .nav-list__item:nth-child(1)::marker {
+  content: url(/app/imgs/home.svg);
+}
+.nav-primary .nav-list__item:nth-child(2)::marker {
+  content: url(/app/imgs/account-circle-outline.svg);
+}
+.nav-primary .nav-list__item:nth-child(3)::marker {
+  content: url(/app/imgs/message-settings-outline.svg);
+}
+.nav-primary .nav-list__item:nth-child(4)::marker {
+  content: url(/app/imgs/history.svg);
+}
+.nav-primary .nav-list__item:nth-child(5)::marker {
+  content: url(/app/imgs/checkbox-marked-circle-plus-outline.svg);
+}
+.nav-primary .nav-list__item:nth-child(6)::marker {
+  content: url(/app/imgs/users-line-solid.svg);
+}
+.nav-secondary .nav-list__item:nth-child(1)::marker {
+  content: url(/app/imgs/cog-outline.svg);
+}
+.nav-secondary .nav-list__item:nth-child(2)::marker {
+  content: url(/app/imgs/help-box.svg);
+}
+.nav-secondary .nav-list__item:nth-child(3)::marker {
+  content: url(/app/imgs/shield-check-outline.svg);
+}
+
+.svg-style {
+  fill: #fff;
 }
 
 .main {

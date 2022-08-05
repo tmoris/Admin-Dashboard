@@ -1,7 +1,84 @@
 @use  "../abstracts/variables" as var;
 @use  "../abstracts/mixin" as mix;
-.nav {
+.nav-container {
   grid-area: navigationbar;
 background-color: var.$slateblue;
+display: flex;
+flex-direction: column;
+gap: 5%;
+padding-block: 2em;
+padding-inline: var.$inline-space;
+color: var.$white;
 
+}
+
+.brand-nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 1em;
+flex-wrap: wrap;
+
+h1 {
+  font-size: 1.5rem;
+  margin-block-end: 0;
+}
+}
+.brand-logo {
+inline-size: 1.5rem;
+}
+.nav {
+
+  &-list {
+display: flex;
+flex-direction: column;
+list-style-position: inside;
+
+&__item  {
+display: list-item;
+}
+&__item + &__item {
+  margin-block-start: var.$block-space;
+}
+  }
+  &-primary {
+    & .nav-list__item {
+    &:nth-child(1)::marker {
+      content: url(/app/imgs/home.svg);
+    }
+    &:nth-child(2)::marker {
+      content: url(/app/imgs/account-circle-outline.svg);
+    }
+    &:nth-child(3)::marker {
+      content: url(/app/imgs/message-settings-outline.svg);
+    }
+    &:nth-child(4)::marker {
+      content: url(/app/imgs/history.svg);
+    }
+    &:nth-child(5)::marker {
+      content: url(/app/imgs/checkbox-marked-circle-plus-outline.svg);
+    }
+    &:nth-child(6)::marker {
+      content: url(/app/imgs/users-line-solid.svg);
+    }
+  }
+  }
+
+  &-secondary {
+    & .nav-list__item {
+      &:nth-child(1)::marker {
+        content: url(/app/imgs/cog-outline.svg);
+      }
+      &:nth-child(2)::marker {
+        content: url(/app/imgs/help-box.svg);
+      }
+      &:nth-child(3)::marker {
+        content: url(/app/imgs/shield-check-outline.svg);
+      }
+    }
+  }
+  
+}
+.svg-style {
+  fill: var.$white;
 }
