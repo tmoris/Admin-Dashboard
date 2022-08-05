@@ -33,7 +33,7 @@ mage]
 
 ### Links
 
-- Solution URL: https://https://github.com/tmoris/Admin-Dashboard
+- Solution URL: [https://https://github.com/tmoris/Admin-Dashboard](https://github.com/tmoris/Admin-Dashboard)
 - Live Site URL:https://tmoris.github.io/
 
 ## My process
