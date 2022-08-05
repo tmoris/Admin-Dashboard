@@ -27,13 +27,14 @@ Users should be able to:
 
 ### Screenshot
 
-![![image]
+![![i![Screenshot 2022-08-05 at 09-51-19 Admin Dashboard](https://user-images.githubusercontent.com/57036823/183011606-ce70deaf-a9cb-4793-8f0a-e52fde9d7b3d.png)
+mage]
 ]
 
 ### Links
 
-- Solution URL: https://https://github.com/tmoris/Usaficar-landing-page
-- Live Site URL:https://tmoris.github.io/Usaficar-landing-page/
+- Solution URL: https://https://github.com/tmoris/Admin-Dashboard
+- Live Site URL:https://tmoris.github.io/
 
 ## My process
 
