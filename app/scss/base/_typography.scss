@@ -1,11 +1,16 @@
 @use "../abstracts/variables" as var;
-@use  "../abstracts/mixin" as mix;
+@use "../abstracts/mixin" as mix;
+
 p {
   margin-block-end: var.$block-space;
   max-inline-size: clamp(45ch, 50%, 75ch);
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
   margin-block-end: var.$inline-space;
   font-family: var.$font-sans;
@@ -18,9 +23,11 @@ h1 {
   margin-block-start: 0;
   font-size: 2rem;
 }
+
 h2 {
   font-size: 1.5rem;
 }
+
 h3 {
   font-size: 1.25rem;
 }
@@ -33,6 +40,7 @@ h5 {
   font-size: 1.0635rem;
 }
 
-small, .small-text {
-font-size: 0.75rem;
+small,
+.small-text {
+  font-size: 0.75rem;
 }

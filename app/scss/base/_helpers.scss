@@ -5,17 +5,18 @@
 }
 
 .centered-content {
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .grid-container {
-display: grid;
-grid-template-areas: " navigationbar site-header"
-" navigationbar main-content"
-" navigationbar  main-content"
-" navigationbar  main-content"
-"  footer footer";
+  display: grid;
+  grid-template-areas: " navigationbar site-header"
+    " navigationbar main-content"
+    " navigationbar  main-content"
+    " navigationbar  main-content"
+    "  footer footer";
 }
 
 .flex {

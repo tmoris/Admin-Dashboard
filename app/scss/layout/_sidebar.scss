@@ -3,17 +3,12 @@
 
 .sidebar {
   grid-area: sidebar;
-  display: grid;
-  grid-template-columns: 1fr;
-  font-size: 1rem;
-  //  gap: var.$block-space;
 
-  & h2 {
-    font-size: 1.125em;
-  }
-
-  & h3 {
-    font-size: 1em;
+  &-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1rem;
+    gap: var.$block-space;
   }
 }
 
@@ -29,7 +24,7 @@
 }
 
 .trends>* {
-  margin-block-end: 0.5em;
+  margin-block-end: var.$block-space;
 }
 
 .announcement+.announcement {
@@ -49,6 +44,6 @@
   }
 
   & p {
-    color: transparentize($color: var.$dark-red, $amount: 0.4);
+    color: transparentize($color: var.$dark-red, $amount: 0.5);
   }
 }

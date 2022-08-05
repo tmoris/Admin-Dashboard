@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as var;
+@use "../abstracts/mixin" as mixn;
 
 .main {
   grid-area: main-content;
@@ -16,11 +17,12 @@
     gap: var.$inline-space;
   }
 }
+
 .project {
-background-color: var.$white;
-padding: var.$block-space;
-border-radius: 0.5em;
-border-inline-start: 0.5em solid var.$golden-yellow;
+  background-color: var.$white;
+  padding: var.$block-space;
+  border-radius: 0.5em;
+  border-inline-start: 0.5em solid var.$golden-yellow;
 
   &-icon {
     display: flex;

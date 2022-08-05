@@ -1,52 +1,56 @@
-@use  "../abstracts/variables" as var;
-@use  "../abstracts/mixin" as mix;
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixin" as mix;
+
 .nav-container {
   grid-area: navigationbar;
-background-color: var.$slateblue;
-display: flex;
-flex-direction: column;
-gap: 5%;
-padding-block: 2em;
-padding-inline: var.$inline-space;
-color: var.$white;
+  background-color: var.$slateblue;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  padding-block: 2em;
+  padding-inline: var.$inline-space;
+  color: var.$white;
 
 }
 
 .brand-nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
-gap: 1em;
-flex-wrap: wrap;
-
-h1 {
-  font-size: 1.5rem;
-  margin-block-end: 0;
-}
-}
-.brand-logo {
-inline-size: 1.5rem;
-}
-.nav {
-
-  &-list {
-display: flex;
-flex-direction: column;
-justify-content: center;
-margin: 0;
-padding: 0;
-
-&__item  {
   display: flex;
-  gap: var.$block-space;
-&--link {
-  color: var.$white;
-  cursor: pointer;
-  text-transform: capitalize;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+
+  h1 {
+    font-size: 1.5rem;
+    margin-block-end: 0;
+  }
 }
+
+.brand-logo {
+  inline-size: 1.5rem;
 }
-&__item + &__item {
-  margin-block-start: var.$block-space;
-}
+
+.nav {
+  &-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+      display: flex;
+      gap: var.$block-space;
+
+      &--link {
+        color: var.$white;
+        cursor: pointer;
+        text-transform: capitalize;
+      }
+    }
+
+    &__item+&__item {
+      margin-block-start: var.$block-space;
+    }
   }
 }
