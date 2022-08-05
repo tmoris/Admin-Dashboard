@@ -306,12 +306,16 @@ small,
   width: 1.5em;
   height: 1.5em;
 }
-.user-profile h2,
-.user-profile p {
+.user-profile h2 {
   font-size: 1rem;
+  text-transform: capitalize;
+}
+.user-profile p {
   -webkit-margin-after: 0;
           margin-block-end: 0;
-  text-transform: capitalize;
+}
+.user-profile p::first-letter {
+  text-transform: uppercase;
 }
 
 .header-nav {
